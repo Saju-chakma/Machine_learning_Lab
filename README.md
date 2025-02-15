@@ -22,7 +22,7 @@ Project name : BD. Weather Prediction using Machine Learning</br>
 <h2>Installation</h2>
 <p>To run this project, install the required dependencies </p>
 <h2>Dataset</h2>
-<p>The project uses a weather dataset. Ensure the dataset file Chittagong.csv is in the working directory before running the notebook.</p>
+<p>The project uses a weather dataset online in (https://data.mendeley.com/datasets/tbrhznpwg9/1) . Ensure the dataset file Chittagong.csv is in the working directory before running the notebook.</p>
 
 <h2>Data Preprocessing</h2>
 <ol>
