@@ -61,6 +61,8 @@ Project name : BD. Weather Prediction using Machine Learning</br>
     <li>XGBoost</li>
     <li>Imbalanced-learn</li>
 </ul>
+<h2>Deploy in local server</h2>
+<p>Running the Flask API Once the model is trained, the Flask API can be started using: python main.py </p>
 
 <h2>Future Improvements</h2>
 <ul>
@@ -68,6 +70,7 @@ Project name : BD. Weather Prediction using Machine Learning</br>
     <li>Experiment with hyperparameter tuning</li>
     <li>Add real-time weather data integration</li>
 </ul>
+
 
 
 
