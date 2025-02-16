@@ -1,123 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Prediction for Chittagong</title>
-</head>
-<body>
-    <h3>This Project is supervised By</h3>
-    <strong>Md Mynoddin Sir,</strong><br>
-    <strong>Assistant Professor,</strong><br>
-    <strong>Department of CSE, RMSTU.</strong>
+# Machine Learning Lab
+Course Supervised by Md. Mynoddin </br>
+Author: Saju Chakma, Auntor Chakma</br>
+Project name : BD. Weather Prediction using Machine Learning</br>
 
-    <h1>Weather Prediction for Chittagong</h1>
-    <p>A machine learning-based <strong>weather prediction system</strong> designed to forecast weather conditions in <strong>Chittagong, Bangladesh</strong> using historical meteorological data. The project applies <strong>advanced data preprocessing, hyperparameter tuning, and ensemble learning</strong> to enhance prediction accuracy and generalization. A <strong>Flask web application</strong> with a structured <strong>Bootstrap UI</strong> allows users to input weather parameters and obtain real-time predictions.</p>
+<h2>Weather Prediction using Machine Learning<h2/>
 
-    <hr>
+<h3>Introduction</h3>
+<p>Weather prediction is an essential application of data science and meteorology, helping individuals, businesses, and governments make informed decisions based on atmospheric conditions. With the advent of machine learning, predicting weather has become more accurate by leveraging large datasets, statistical models, and real-time data processing. This project implements machine learning techniques to analyze and predict weather conditions effectively.</p>
+<h3>Overview </h3>
+<p> This project focuses on predicting weather conditions using machine learning techniques. It preprocesses weather data, applies classification models, and evaluates their performance to make accurate predictions.</p>
+<h2>Features</h2>
+<ul>
+    <li>Data preprocessing and feature scaling</li>
+    <li>Multiple machine learning models including Random Forest, SVM, XGBoost, and Logistic Regression</li>
+    <li>Model evaluation using accuracy, precision, recall, and F1-score</li>
+    <li>Data balancing using SMOTE</li>
+    <li>Visualization using Matplotlib and Seaborn</li>
+</ul>
+</ul>
 
-    <h2>Table of Contents</h2>
-    <ul>
-        <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#dataset">Dataset</a></li>
-        <li><a href="#methodology">Methodology</a></li>
-        <li><a href="#installation">Installation</a></li>
-        <li><a href="#usage">Usage</a>
-            <ul>
-                <li><a href="#training-the-model">Training the Model</a></li>
-                <li><a href="#running-the-flask-application">Running the Flask Application</a></li>
-                <li><a href="#using-the-web-interface">Using the Web Interface</a></li>
-            </ul>
-        </li>
-        <li><a href="#results">Results</a></li>
-        <li><a href="#future-enhancements">Future Enhancements</a></li>
-    </ul>
+<h2>Installation</h2>
+<p>To run this project, install the required dependencies </p>
+<h2>Dataset</h2>
+<p>The project uses a weather dataset online in (https://data.mendeley.com/datasets/tbrhznpwg9/1) . Ensure the dataset file Chittagong.csv is in the working directory before running the notebook.</p>
 
-    <h2 id="introduction">Introduction</h2>
-    <p>Weather forecasting is a crucial component in various sectors, including agriculture, transportation, and disaster management. This project leverages <strong>historical weather data</strong> to develop a predictive model capable of classifying weather conditions into <strong>Rain, High Temperature, Normal Temperature, or Cold</strong>.</p>
-    <p>By integrating <strong>RandomizedSearchCV</strong>, <strong>SMOTE</strong>, and a <strong>stacking ensemble</strong>, the model achieves <strong>higher accuracy</strong> while minimizing the risks of overfitting. A <strong>Flask-based web application</strong> provides a structured interface where users can input relevant weather parameters and obtain real-time predictions with confidence scores.</p>
+<h2>Data Preprocessing</h2>
+<ol>
+    <li>Load the dataset:</li>
+    <li>Read the dataset using 'Chittagong.csv'</li>
+    <li>Handle missing values and perform feature scaling using StandardScaler.</li>
+    <li>Balance the dataset using SMOTE to address class imbalances.</li>
+</ol>
 
-    <hr>
+<h2>Model Training</h2>
+<ol>
+    <li>Split the data into training and testing sets:</li>
+    <li>Train models such as Random Forest, SVM, and XGBoost:</li>
+    <li>Perform hyperparameter tuning using RandomizedSearchCV.</li>
+</ol>
 
-    <h2 id="dataset">Dataset</h2>
-    <p>The dataset used for this project is obtained from <strong>Mendeley Data</strong>, consisting of <strong>daily meteorological records</strong> for Chittagong.</p>
-    <ul>
-        <li><strong>Temperature (°C)</strong></li>
-        <li><strong>Rainfall (mm)</strong></li>
-        <li><strong>Humidity (%)</strong></li>
-        <li><strong>Sunshine (hours)</strong></li>
-        <li><strong>Date (year, month, day)</strong></li>
-    </ul>
-    <p>Download the dataset from: <a href="https://data.mendeley.com/datasets/tbrhznpwg9/1">Mendeley Data - Chittagong Weather</a></p>
+<h2>Visualization</h2>
+<ul>
+    <li>Use Matplotlib and Seaborn for exploratory data analysis.</li>
+    <li>Visualize feature importance and model performance metrics.</li>
+</ul>
 
-    <h2 id="methodology">Methodology</h2>
-    <h3>Data Preprocessing</h3>
-    <ul>
-        <li><strong>Handling Missing Values:</strong> Median imputation for numerical features.</li>
-        <li><strong>Feature Engineering:</strong> Converting Year, Month, and Day into a single Date feature.</li>
-        <li><strong>Class Imbalance Handling:</strong> <strong>SMOTE</strong> ensures balanced class representation.</li>
-    </ul>
+<h2>Usage</h2>
+<p>Run the Jupyter Notebook:</p>
+<p>jupyter notebook </p>
 
-    <h3>Model Development & Hyperparameter Tuning</h3>
-    <ul>
-        <li><strong>Algorithms Implemented:</strong> Random Forest, Gradient Boosting, XGBoost, SVM, Logistic Regression.</li>
-        <li><strong>Optimization Strategy:</strong> RandomizedSearchCV with Stratified K-Fold cross-validation.</li>
-    </ul>
+<h2>Dependencies</h2>
+<ul>
+    <li>Python 3.x</li>
+    <li>Jupyter Notebook</li>
+    <li>NumPy</li>
+    <li>Pandas</li>
+    <li>Matplotlib</li>
+    <li>Seaborn</li>
+    <li>Scikit-Learn</li>
+    <li>XGBoost</li>
+    <li>Imbalanced-learn</li>
+</ul>
+<h2>Deploy in local server</h2>
+<p>Running the Flask API Once the model is trained, the Flask API can be started using: python main.py </p>
 
-    <h3>Stacking Ensemble</h3>
-    <p>A <strong>StackingClassifier</strong> is implemented to combine multiple models and improve predictive performance.</p>
+<h2>Future Improvements</h2>
+<ul>
+    <li>Incorporate deep learning models for better accuracy</li>
+    <li>Experiment with hyperparameter tuning</li>
+    <li>Add real-time weather data integration</li>
+</ul>
 
-    <h2 id="installation">Installation</h2>
-    <h3>Step 1: Clone the Repository</h3>
-    <pre>
-git clone https://github.com/saju-chakma/weather_prediction_chittagong.git
-cd weather_prediction_chittagong
-    </pre>
 
-    <h3>Step 2: Create and Activate a Virtual Environment</h3>
-    <pre>
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-    </pre>
 
-    <h3>Step 3: Install Dependencies</h3>
-    <pre>
-pip install -r requirements.txt
-    </pre>
 
-    <h2 id="usage">Usage</h2>
-    <h3 id="training-the-model">Training the Model</h3>
-    <p>To train the model and build the ensemble classifier, execute:</p>
-    <pre>
-python train_model.py
-    </pre>
-
-    <h3 id="running-the-flask-application">Running the Flask Application</h3>
-    <p>To launch the Flask web application, execute:</p>
-    <pre>
-python app.py
-    </pre>
-    <p>By default, the application will run on: <a href="http://127.0.0.1:5000">http://127.0.0.1:5000</a></p>
-
-    <h3 id="using-the-web-interface">Using the Web Interface</h3>
-    <ol>
-        <li>Enter weather parameters: Rainfall, Temperature, Humidity, Sunshine, Date.</li>
-        <li>Click "Predict Weather".</li>
-        <li>View Predictions.</li>
-    </ol>
-
-    <h2 id="results">Results</h2>
-    <p>The <strong>stacking ensemble</strong> consistently outperforms individual models by leveraging multiple classifiers.</p>
-    <ul>
-        <li><strong>Higher Accuracy:</strong> The ensemble achieves superior classification accuracy.</li>
-        <li><strong>Reduced Overfitting:</strong> Early stopping and cross-validation strategies prevent overfitting.</li>
-    </ul>
-
-    <h2 id="future-enhancements">Future Enhancements</h2>
-    <ul>
-        <li>Integration of Deep Learning Models - Implement LSTM-based RNNs.</li>
-        <li>Real-Time Weather API Integration.</li>
-        <li>Automated Model Retraining.</li>
-    </ul>
-</body>
-</html>
